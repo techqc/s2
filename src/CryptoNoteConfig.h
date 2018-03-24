@@ -21,7 +21,7 @@ namespace parameters {
 #define CRYPTONOTE_MAX_BLOCK_NUMBER                     500000000
 #define CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                  500000000
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
-#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX         54 // starts with "A"
+#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX         0xe // starts with "n"
 #define CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW            30
 #define CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT              60 * 60 * 2
 
@@ -99,8 +99,8 @@ namespace parameters {
 
 } // parameters
 
-#define CRYPTONOTE_NAME                                 "alloy"
-#define CRYPTONOTE_GENESIS_TX                           "011e01ff00018080a0fef0fa97a43f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d201f0ee231168072d806ecd2c733bb79286c398aa24d9b0d06d7bfb89d2869d"
+#define CRYPTONOTE_NAME                                 "novocoin"
+#define CRYPTONOTE_GENESIS_TX                           ""
 
 #define TRANSACTION_VERSION_1                           1
 #define TRANSACTION_VERSION_2                           2
@@ -119,8 +119,8 @@ namespace parameters {
 #define BLOCKS_SYNCHRONIZING_DEFAULT_COUNT              4096
 #define COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT           1000
 
-#define P2P_DEFAULT_PORT                                1810
-#define RPC_DEFAULT_PORT                                1811
+#define P2P_DEFAULT_PORT                                18666
+#define RPC_DEFAULT_PORT                                18665
 
 #define P2P_LOCAL_WHITE_PEERLIST_LIMIT                  1000
 #define P2P_LOCAL_GRAY_PEERLIST_LIMIT                   5000
@@ -138,10 +138,8 @@ namespace parameters {
 #define P2P_STAT_TRUSTED_PUB_KEY                        "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115"
 
 const std::initializer_list<const char*> SEED_NODES {
-   "34.197.53.233:1810",
-  "89.18.26.10:1810",
-  "89.18.27.201:1810",
-  "195.201.35.225:1810"
+   "35.227.72.89:18666",
+  "35.227.89.68:18666"
   
 };
 
